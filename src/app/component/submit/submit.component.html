@@ -1,0 +1,31 @@
+<div class="success-page">
+
+  <!-- Success Icon -->
+  <div class="success-icon">
+    <img 
+      src="./submit-icon.png" 
+      alt="Success" 
+      class="success-image">
+  </div>
+
+  <h1>Admission Successful!</h1>
+
+  <!-- Dynamic Patient Name -->
+  <p class="patient-name">{{ patientName }}</p>
+
+  <div class="admission-details">
+    <p><strong>Admission ID:</strong> {{ admissionID }}</p>
+    <p><strong>Admission Date:</strong> {{ admissionDate }}</p>
+  </div>
+
+  <p class="thank-you">
+    The patient has been successfully registered.<br>
+    Our medical team has been notified and will attend shortly.
+  </p>
+
+  <!-- Home Button -->
+  <button href="../home/home.component.html" class="home-btn">
+    Go to Home
+  </button>
+
+</div>

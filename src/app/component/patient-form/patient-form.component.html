@@ -1,0 +1,86 @@
+<div class="container">
+
+  <h2 class="header">Patient Admission Form</h2>
+
+  <form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+
+    <!-- Full Name -->
+    <div class="form-action">    
+      <label class="label">Full Name <span class="text-red-500">*</span></label>
+      <input 
+        type="text" 
+        formControlName="fullName" 
+        class="input-field"
+        placeholder="Enter patient's full name">
+    </div>
+
+    <div class="form-action">
+      <!-- Date of Birth -->
+      <div>
+        <label class="label">D.O.B *</label>
+        <input type="date" formControlName="dob" class="input-field">
+      </div>
+
+      <!-- Gender -->
+      <div>
+        <label class="label">Gender *</label>
+        <select formControlName="gender" class="input-field">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-action">
+      <label class="label">Phone Number *</label>
+      <input type="text" formControlName="phoneNumber" 
+             class="input-field" placeholder="Enter phone number">
+    </div>
+
+    <!-- Blood Pressure -->
+    <div class="form-action">
+      <label class="label">Blood Pressure (e.g. 120/80)</label>
+      <input type="text" formControlName="bloodPressure" 
+             class="input-field" placeholder="120/80">
+    </div>
+
+    <!-- Temperature -->
+    <div class="form-action">
+      <label class="label">Temperature (°C)</label>
+      <input type="number" step="0.1" formControlName="temperature" 
+             class="input-field">
+    </div>
+
+    <!-- Heart Rate -->
+    <div class="form-action">
+      <label class="label">Heart Rate (BPM)</label>
+      <input type="number" formControlName="heartRate" 
+             class="input-field">
+    </div>
+
+    <!-- Reason For Admission -->
+    <div class="form-action">
+      <label class="label">Reason For Admission *</label>
+      <textarea formControlName="reasonForAdmission" rows="4"
+                class="input-field"
+                placeholder="Enter any symptoms or additional notes..."></textarea>
+    </div>
+
+    <!-- Admission Date -->
+    <div class="form-action">
+      <label class="label">Admission Date *</label>
+      <input type="date" formControlName="admissionDate" 
+             class="input-field">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit">
+      SUBMIT
+    </button>
+
+  </form>
+
+</div>
