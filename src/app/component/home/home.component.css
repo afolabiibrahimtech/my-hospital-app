@@ -1,18 +1,8 @@
-.logo-container {
-  margin-bottom: 40px;
-  text-align: center;
-}
 
-.hospital-logo {
-  width: 90px;
-  height: 90px;
 
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+.hospital-logo{
+  width: 140px;
+  height: 140px
 }
 .home{
   margin-top: 100px;
@@ -23,8 +13,7 @@
     background-color: #060B23;
     color: aliceblue;
     width: 408px;  
-    height: 804;         
-  margin: 10px auto;      
+    height: 804;             
   padding: 61px 40px 60px 40px;
   border-radius: 20px;
   display: flex;
@@ -33,27 +22,33 @@
   justify-content: center;
   text-align: center;
   color: white;
-
+  font-family: 'Poppins', sans-serif;
 
 }
-.hospital-name{
-   display: block;
+.radical{
+  font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.hospital{
+  margin-top: 0px;
+  font-size: 27px;
+  font-weight: 100;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 .message{
+  margin-top: 1px;
    display: block;
     font-family: 'Poppins', sans-serif;
 }
 
 .proceed-btn{
-  margin-top: 100px;
-
+  margin-top: 10px;
   background-color: rgb(255, 255, 255);
 border: 10px;
 border-radius: 20px;
-
 padding: 10px 10px;
 width: 50%;
 display: block;
