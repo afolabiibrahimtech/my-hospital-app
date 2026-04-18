@@ -45,13 +45,25 @@
 }
 
 .proceed-btn{
-  margin-top: 10px;
-  background-color: rgb(255, 255, 255);
-border: 10px;
-border-radius: 20px;
-padding: 10px 10px;
-width: 50%;
-display: block;
-margin: 40px auto;
+  width: 100%;
+  max-width: 280px;          
+  height: 52px;              
+  margin: 30px auto 20px;    
+  display: block;
+  background-color: rgb(255, 255, 255);  
+  color: black;
+  border: none;
+  border-radius: 9999px;   
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
 
+.proceed-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
 }

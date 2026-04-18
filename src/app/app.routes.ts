@@ -4,10 +4,8 @@ import { PatientComponent } from './component/patient-form/patient-form.componen
 import { SubmitComponent } from './component/submit/submit.component';
 
 export const routes: Routes = [ 
- { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },   // ← This is the fix
+  { path: 'home', component: HomeComponent },
   { path: 'patient-form', component: PatientComponent },
   { path: 'submit', component: SubmitComponent },
-  
-
 ];
-
